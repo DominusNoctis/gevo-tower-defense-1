@@ -1,11 +1,11 @@
 from game_object import GameObject
-from pygame.sprite import Sprite
+from pygame.surface import Surface
 
 class MobileObject(GameObject):
     """ Class for objects that move """
 
     def __init__(
-        self, x: int, y: int, width:int, height:int, image: Sprite, speed:int, direction:tuple[int]
+        self, x: int, y: int, width:int, height:int, image: Surface, speed:int, direction:tuple[int]
         ) -> None:
         super().__init__(x,y,width,height,image)
         self.speed=speed
